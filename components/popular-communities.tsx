@@ -3,15 +3,20 @@
 import type React from "react"
 
 import { useEffect, useRef, useState } from "react"
-import Image from "next/image"
+import Image, {StaticImageData} from "next/image"
 import Link from "next/link"
+import Logo1 from "../components/assets/img/logo-1.png"
+import Logo2 from "../components/assets/img/Logo-2.png"
+import Logo3 from "../components/assets/img/Logo-3.jpeg"
+import Logo4 from "../components/assets/img/Logo-4.png"
+import Logo5 from "../components/assets/img/Logo-5.jpeg"
 
 // Define the community type
 interface Community {
   id: string
   name: string
   members: number
-  icon: string
+  icon: string | StaticImageData
 }
 
 // Sample data for popular loan communities
@@ -20,31 +25,31 @@ const communities: Community[] = [
     id: "home-loans",
     name: "Retani Women",
     members: 6426266,
-    icon: "/placeholder.svg?height=40&width=40",
+    icon: Logo1,
   },
   {
     id: "car-loans",
     name: "Assemblies of Mercy",
     members: 5554546,
-    icon: "/placeholder.svg?height=40&width=40",
+    icon: Logo2,
   },
   {
     id: "business-loans",
     name: "Ashake Party",
     members: 5537055,
-    icon: "/placeholder.svg?height=40&width=40",
+    icon: Logo3,
   },
   {
     id: "personal-loans",
     name: "Police Ogba",
     members: 6223403,
-    icon: "/placeholder.svg?height=40&width=40",
+    icon: Logo4,
   },
   {
     id: "student-loans",
     name: "Ashiverb Guards",
     members: 712450,
-    icon: "/placeholder.svg?height=40&width=40",
+    icon: Logo5,
   },
 ]
 
@@ -90,8 +95,8 @@ export function PopularCommunities() {
 
   return (
     // <div ref={sidebarRef} className="bg-green-200 rounded-lg shadow-sm p-4" style={sidebarStyle}>
-    <div className="bg-green-200 rounded-lg shadow-sm p-4">
-      <h3 className="text-gray-600 font-medium text-lg mb-4">POPULAR COOPERAATIVES</h3>
+    <div className="rounded-lg bg-green-100 p-4">
+      <h3 className="text-black font-bold text-lg mb-4">POPULAR COOPERAATIVES</h3>
 
       <div className="space-y-4">
         {communities.map((community) => (
@@ -112,7 +117,7 @@ export function PopularCommunities() {
       </div>
 
       <div className="mt-4 pt-2 border-t border-gray-200">
-        <Link href="#see-more" className="text-green-600 hover:text-green-700 font-medium text-sm">
+        <Link href="/pages/AllCopearatives" className="text-green-600 hover:text-green-700 font-medium text-sm">
           See more
         </Link>
       </div>

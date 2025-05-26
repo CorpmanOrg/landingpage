@@ -2,12 +2,19 @@
 
 import { useState } from "react"
 import Link from "next/link"
+import { useRouter } from "next/navigation"
 
 export function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
 
+  const router = useRouter()
+
+  const handleGetStarted = () => {
+    router.push("/auth")
+  }
+
   return (
-    <header className="w-full bg-[#F3FFF460] relative">
+    <header className="w-full relative">
       <div className="container mx-auto px-4 md:px-6">
         <div className="flex h-20 items-center justify-between">
           <div className="flex items-center gap-4">
@@ -36,9 +43,11 @@ export function Navbar() {
             </Link>
           </nav>
           <div className="hidden md:flex items-center gap-4">
-            <button className="px-4 py-2 bg-green-600 text-white font-medium rounded-md hover:bg-green-700 transition-colors">
+            {/* <button className="px-4 py-2 bg-white text-green-500 font-bold shadow-lg rounded-md hover:scale-110 transition-transform duration-300"
+            onClick={handleGetStarted}
+            >
               Get Started
-            </button>
+            </button> */}
           </div>
           <button
             className="flex items-center justify-center rounded-md p-2 md:hidden"
@@ -61,7 +70,7 @@ export function Navbar() {
         </div>
       </div>
       {isMenuOpen && (
-        <div className="md:hidden bg-[#F3FFF460]">
+        <div className="md:hidden">
           <div className="container mx-auto px-4 py-4">
             <nav className="flex flex-col gap-4">
               <Link href="/" className="text-sm font-medium text-gray-900 hover:text-green-600 transition-colors">

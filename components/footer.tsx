@@ -2,18 +2,18 @@ import Link from "next/link"
 
 export function Footer() {
   return (
-    <footer className="w-full bg-gradient-to-r from-[#e6f4e6] to-[#b2c2b2] pt-12 pb-8">
+    <footer className="w-full bg-gradient-to-r from-lime-400 to-green-600 pt-12 pb-8 mt-[50px]">
       <div className="container mx-auto px-8 md:px-12 lg:px-16">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-12">
           {/* Column 1: About the company */}
           <div className="flex flex-col space-y-4">
             <h3 className="text-lg font-semibold text-gray-800">About the company</h3>
-            <p className="text-gray-600 max-w-xs">
+            <p className="text-black max-w-xs">
               "We believe in your dreams. Our financial solutions are designed to fuel your aspirations and help you
               achieve more."
             </p>
             <div className="flex space-x-4 mt-4">
-              <Link href="#" className="text-green-700 hover:text-green-800 transition-colors">
+              <Link href="#" className="text-green-700 hover:text-green-900 transition-colors">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="24"
@@ -89,19 +89,19 @@ export function Footer() {
           <div className="flex flex-col space-y-4">
             <h3 className="text-lg font-semibold text-gray-800">Products</h3>
             <nav className="flex flex-col space-y-2">
-              <Link href="#" className="text-gray-600 hover:text-green-700 transition-colors">
+              <Link href="#" className="text-black hover:text-green-700 transition-colors">
                 CSR Activities
               </Link>
-              <Link href="#" className="text-gray-600 hover:text-green-700 transition-colors">
+              <Link href="#" className="text-black hover:text-green-700 transition-colors">
                 Green Banking
               </Link>
-              <Link href="#" className="text-gray-600 hover:text-green-700 transition-colors">
+              <Link href="#" className="text-black hover:text-green-700 transition-colors">
                 News
               </Link>
-              <Link href="#" className="text-gray-600 hover:text-green-700 transition-colors">
+              <Link href="#" className="text-black hover:text-green-700 transition-colors">
                 Ongoing Campaign
               </Link>
-              <Link href="#" className="text-gray-600 hover:text-green-700 transition-colors">
+              <Link href="#" className="text-black hover:text-green-700 transition-colors">
                 Updates
               </Link>
             </nav>
@@ -111,19 +111,19 @@ export function Footer() {
           <div className="flex flex-col space-y-4">
             <h3 className="text-lg font-semibold text-gray-800">Get Started</h3>
             <nav className="flex flex-col space-y-2">
-              <Link href="#" className="text-gray-600 hover:text-green-700 transition-colors">
+              <Link href="#" className="text-black hover:text-green-700 transition-colors">
                 Career
               </Link>
-              <Link href="#" className="text-gray-600 hover:text-green-700 transition-colors">
+              <Link href="#" className="text-black hover:text-green-700 transition-colors">
                 Contact Us
               </Link>
-              <Link href="#" className="text-gray-600 hover:text-green-700 transition-colors">
+              <Link href="#" className="text-black hover:text-green-700 transition-colors">
                 Government Securities
               </Link>
-              <Link href="#" className="text-gray-600 hover:text-green-700 transition-colors">
+              <Link href="#" className="text-black hover:text-green-700 transition-colors">
                 Examples
               </Link>
-              <Link href="#" className="text-gray-600 hover:text-green-700 transition-colors">
+              <Link href="#" className="text-black hover:text-green-700 transition-colors">
                 NIS
               </Link>
             </nav>
@@ -133,19 +133,19 @@ export function Footer() {
           <div className="flex flex-col space-y-4">
             <h3 className="text-lg font-semibold text-gray-800">About</h3>
             <nav className="flex flex-col space-y-2">
-              <Link href="#" className="text-gray-600 hover:text-green-700 transition-colors">
+              <Link href="#" className="text-black hover:text-green-700 transition-colors">
                 IPDC at a Glance
               </Link>
-              <Link href="#" className="text-gray-600 hover:text-green-700 transition-colors">
+              <Link href="#" className="text-black hover:text-green-700 transition-colors">
                 Mission & Values
               </Link>
-              <Link href="#" className="text-gray-600 hover:text-green-700 transition-colors">
+              <Link href="#" className="text-black hover:text-green-700 transition-colors">
                 Corporate Governance
               </Link>
-              <Link href="#" className="text-gray-600 hover:text-green-700 transition-colors">
+              <Link href="#" className="text-black hover:text-green-700 transition-colors">
                 Shareholders
               </Link>
-              <Link href="#" className="text-gray-600 hover:text-green-700 transition-colors">
+              <Link href="#" className="text-black hover:text-green-700 transition-colors">
                 Investor Relations
               </Link>
             </nav>
