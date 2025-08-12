@@ -1,0 +1,97 @@
+/* Snackbar.css
+
+.custom-snackbar {
+  position: fixed;
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 16px 32px;
+  background-color: #333;
+  color: white;
+  border-radius: 4px;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s, visibility 0.3s;
+  z-index: 9999;
+  font-size: 16px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 90%;
+  max-width: 500px;
+}
+
+.custom-snackbar.show {
+  opacity: 1;
+  visibility: visible;
+}
+
+.custom-snackbar.success {
+  background-color: #4caf50; 
+}
+
+.custom-snackbar.error {
+  background-color: #f44336; 
+}
+
+.custom-snackbar.info {
+  background-color: #2196f3; 
+}
+
+.custom-snackbar.warning {
+  background-color: #ff9800; 
+}
+
+.close-btn {
+  font-size: 24px;
+  font-weight: bold;
+  cursor: pointer;
+  color: white;
+  background: none;
+  border: none;
+  margin-left: 16px;
+} */
+
+.custom-snackbar {
+  position: fixed;
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #323232;
+  color: #fff;
+  padding: 1rem 1rem;
+  border-radius: 6px;
+  opacity: 0;
+  transition: all 0.3s ease-in-out;
+  z-index: 9999;
+}
+
+.custom-snackbar.show {
+  opacity: 1;
+}
+
+.custom-snackbar.success {
+  background-color: #d4edda; /* light green */
+  color: #2e7d32;
+}
+
+.custom-snackbar.error {
+  background-color: #f8d7da; /* light red */
+  color: #c62828;
+}
+
+.custom-snackbar.warning {
+  background-color: #fff3cd; /* light yellow/orange */
+  color: #f57c00;
+}
+
+.custom-snackbar.info {
+  background-color: #d1ecf1; /* light blue */
+  color: #0277bd;
+}
+
+.close-btn {
+  margin-left: 1rem;
+  cursor: pointer;
+  font-weight: bold;
+}

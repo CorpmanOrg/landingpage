@@ -210,7 +210,7 @@ export default function Home() {
               <Newsletter />
             </div>
             {/* Sidebar column - updated with better sticky behavior */}
-            <div className="hidden xl:block w-full lg:w-[300px] mt-[60px] sticky top-0 self-start">
+            <div className="hidden xl:block w-full lg:w-[300px] mt-[60px] sticky top-0 self-start bg-transparent p-[2rem_0rem]">
               <div className="lg:sticky lg:top-8" style={{ maxHeight: "calc(100vh - 100px)", overflowY: "auto" }}>
                 <PopularCommunities />
               </div>
