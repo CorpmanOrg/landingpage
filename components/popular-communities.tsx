@@ -156,7 +156,7 @@ export function PopularCommunities() {
     <div className="rounded-lg bg-green-100 p-4">
       <h3 className="text-black font-bold text-lg mb-4">
         POPULAR COOPERATIVES
-        {/* <span className="ml-2 text-xs bg-yellow-200 text-yellow-800 px-2 py-1 rounded">DEMO MODE</span> */}
+        {/* <span className="ml-2 text-xs bg-yellow-200 text-yellow-800 px-2 py-1 rounded">New DEMO MODE</span> */}
       </h3>
 
       <div className="space-y-4">
