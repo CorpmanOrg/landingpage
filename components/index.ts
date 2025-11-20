@@ -1,0 +1,9 @@
+// Component exports for easier importing
+export { BackButton } from './BackButton';
+export { LoadingState } from './LoadingState';
+export { ErrorState } from './ErrorState';
+export { HeroSection } from './HeroSection';
+export { AboutSection } from './AboutSection';
+export { InvestmentPackages } from './InvestmentPackages';
+export { JoinForm } from './JoinForm';
+export { AvatarGroup } from './avatar-group';

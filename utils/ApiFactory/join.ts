@@ -34,6 +34,18 @@ export const getAllCooperativesFn = async (page = 1, limit = 5) => {
   return data;
 };
 
+export const fetchSingleCooperativeFn = async (orgId: string) => {
+  const res = await fetch(`/api/fetchSingleCooperative?orgId=${orgId}`);
+  const data = await res.json();
+
+  if (!res.ok) {
+    const msg = Array.isArray(data.errors) ? data.errors.join(", ") : data.message || "An unknown error occured";
+
+    throw new Error(msg);
+  }
+  return data;
+};
+
 export const joinCoopFn = async (payload: joinCoop) => {
   const res = await fetch("/api/joinCooperative", {
     method: "POST",
