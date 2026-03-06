@@ -4,7 +4,7 @@ import { useEffect, useState } from "react";
 
 type VerifyState = "loading" | "success" | "error";
 
-const API_BASE_URL = process.env.API_BASE_TEST_URL || "";
+const API_BASE_URL = process.env.NEXT_PUBLIC_API_BASE_TEST_URL || "";
 const DASHBOARD_URL = "https://corpman-dashboard.vercel.app/auth";
 
 export default function VerifyEmailClient({ token }: { token: string }) {
