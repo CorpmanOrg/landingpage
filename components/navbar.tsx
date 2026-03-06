@@ -3,6 +3,7 @@
 import { useState } from "react"
 import Link from "next/link"
 import { useRouter } from "next/navigation"
+import Image from "next/image"
 
 export function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
@@ -21,6 +22,7 @@ export function Navbar() {
             <Link href="/" className="flex items-center gap-2">
               <span className="text-2xl font-bold text-green-600 font-montserrat">CorpMan</span>
             </Link>
+            
           </div>
           <nav className="hidden md:flex gap-6">
             <Link href="/" className="text-sm font-medium text-gray-900 hover:text-green-600 transition-colors">

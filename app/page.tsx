@@ -12,11 +12,8 @@ import Logo2 from "../components/assets/img/Logo-2.png";
 import Logo3 from "../components/assets/img/Logo-3.jpeg";
 import Logo4 from "../components/assets/img/Logo-4.png";
 import Logo5 from "../components/assets/img/Logo-5.jpeg";
-import FifthImage from "../components/assets/img/diego-hernandez-MSepzbKFz10-unsplash.jpg";
-import FirstImage from "../components/assets/img/aiony-haust-3TLl_97HNJo-unsplash (1).jpg";
 
 export default function Home() {
-  const repeatedImages = Array(30).fill(FirstImage);
 
   return (
     <main className="min-h-screen flex flex-col bg-[#F3FFF460] relative">
