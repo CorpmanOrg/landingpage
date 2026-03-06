@@ -12,18 +12,18 @@ export default function VerifyEmailClient({ token }: { token: string }) {
   const [message, setMessage] = useState("Verifying your email, please wait...");
 
   useEffect(() => {
-    let isMounted = true;
+    let isMountedNow = true;
 
     async function verifyEmail() {
       if (!token) {
-        if (!isMounted) return;
+        if (!isMountedNow) return;
         setState("error");
         setMessage("Invalid verification link. Token is missing.");
         return;
       }
 
       if (!API_BASE_URL) {
-        if (!isMounted) return;
+        if (!isMountedNow) return;
         setState("error");
         setMessage("App configuration error: missing NEXT_PUBLIC_API_BASE_TEST_URL.");
         return;
@@ -40,7 +40,7 @@ export default function VerifyEmailClient({ token }: { token: string }) {
           payload = await res.json();
         } catch {}
 
-        if (!isMounted) return;
+        if (!isMountedNow) return;
 
         if (res.ok) {
           setState("success");
@@ -51,7 +51,7 @@ export default function VerifyEmailClient({ token }: { token: string }) {
         setState("error");
         setMessage(payload?.message || "Verification failed. The link may be expired or invalid.");
       } catch {
-        if (!isMounted) return;
+        if (!isMountedNow) return;
         setState("error");
         setMessage("Network error while verifying email. Please try again.");
       }
@@ -60,7 +60,7 @@ export default function VerifyEmailClient({ token }: { token: string }) {
     verifyEmail();
 
     return () => {
-      isMounted = false;
+      isMountedNow = false;
     };
   }, [token]);
 
